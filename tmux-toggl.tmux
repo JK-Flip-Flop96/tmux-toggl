@@ -6,8 +6,8 @@ cwd = os.path.dirname(os.path.realpath(__file__))
 
 placeholder = "#{toggl_time}"
 
-left_spacer = os.popen('tmux show-option -gqv toggl-left-spacer').read()
-right_spacer = os.popen('tmux show-option -gqv toggl-right-spacer').read()
+left_spacer = os.popen('tmux show-option -gqv @toggl-left-spacer').read()
+right_spacer = os.popen('tmux show-option -gqv @toggl-right-spacer').read()
 
 call = f'#(python3 {cwd}/tmux-toggl.py "{left_spacer}" "{right_spacer}")'
 
