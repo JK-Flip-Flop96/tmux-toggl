@@ -9,7 +9,7 @@ placeholder = "#{toggl_time}"
 left_spacer = os.popen('tmux show-option -gqv @toggl-left-spacer').read()
 right_spacer = os.popen('tmux show-option -gqv @toggl-right-spacer').read()
 
-call = f"#(python3 {cwd}/tmux-toggl.py '{left_spacer}' '{right_spacer}')"
+call = f"#(python3 {cwd}/tmux-toggl-status.py '{left_spacer}' '{right_spacer}')"
 
 status_left = os.popen('tmux show-option -gqv status-left').read()
 status_right = os.popen('tmux show-option -gqv status-right').read()
