@@ -2,6 +2,7 @@ from toggl import api
 
 import datetime
 import time
+import sys
 
 current = api.TimeEntry.objects.current()
 
@@ -22,4 +23,4 @@ else:
         output += f'{minutes}m '
     output += f'{seconds}s'
 
-    print(output)
+    print(sys.argv[1] + output + sys.argv[2])
