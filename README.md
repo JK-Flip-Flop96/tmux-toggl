@@ -30,5 +30,9 @@ Ensure this line is set before the plugin manager is run i.e. before `run '~/.tm
 
 ### Status Line Component
 
-The status line Component can be added by including `#{toggl_time}` in either your `status-left` or `status-right` in your `~/.tmux.conf`
+The status line component can be added by including `#{toggl_time}` in either your `status-left` or `status-right` in your `~/.tmux.conf`
  
+## Planned Features
+
+- Keybinds for starting/stopping timers
+- Custom tmux commands to interface with more of the toggl track api
