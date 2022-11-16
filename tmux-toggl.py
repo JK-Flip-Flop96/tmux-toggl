@@ -23,4 +23,4 @@ else:
         output += f'{minutes}m '
     output += f'{seconds}s'
 
-    print(sys.argv[1] + output + sys.argv[2])
+    print(sys.argv[1].rstrip("\n") + output + sys.argv[2].rstrip("\n"))
