@@ -15,7 +15,7 @@ else:
 
     hours, remainder = divmod(delta.seconds, 3600)
     minutes, seconds = divmod(remainder, 60)
-    output = "祥"
+    output = f"{sys.argv[3]}"
 
     if hours > 0:
         output += f'{hours}h '

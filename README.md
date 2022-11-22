@@ -31,7 +31,26 @@ Ensure this line is set before the plugin manager is run i.e. before `run '~/.tm
 ### Status Line Component
 
 The status line component can be added by including `#{toggl_time}` in either your `status-left` or `status-right` in your `~/.tmux.conf`
- 
+
+#### Padding
+
+The status line component can be padded on the left and right when it is active by setting the following variables.
+
+```
+set -g @toggl-left-spacer ""
+set -g @toggl-right-spacer ""
+```
+
+The above snippet surronds the component in Powerline half circles
+
+#### Icon
+
+The `@toggl-icon` variable can be used to add a prefix icons to the component. For example, the following snipper adds a stopwatch icon and a leading space:
+
+```
+set -g @toggl-icon "祥"
+```
+
 ## Planned Features
 
 - Keybinds for starting/stopping timers
